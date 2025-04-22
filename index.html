@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="personal-portfolio-img/images/govind Symbol.jpeg" class="logo">
+                
+            </nav>
+            <div class="header_text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Govind</span> Dhakane </h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="personal-portfolio-img/images/user.png">
+                </div>
+                  
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a skilled web developer with a strong passion for creating modern, 
+                        user-friendly, and responsive websites. With expertise in HTML, CSS, JavaScript, and various front-end frameworks,
+                        I build sleek and functional web applications. My keen eye for design and performance optimization ensures a seamless user experience.
+                        Always eager to learn and adapt to new technologies, I stay ahead in the fast-evolving web development landscape. Whether it's crafting dynamic websites or optimizing existing ones, 
+                        I bring innovation and efficiency to every project.</p>
+                        <div class="tab-title">
+                            <p class="links active-link "onclick="opentab('skills')">Skills</p>
+                            <p class="links"onclick="opentab('experience')">Experiance</p>
+                            <p class="links"onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents activetab"id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>Design Websites and  Web Appliactions</li>
+                                <li><span>DBMS</span><br>Good Knowledge of databases</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents"id="experience">
+                            <ul>
+                                <li><span>2025</span><br>Intern at Unified Mentor</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents"id="education">
+                            <ul>
+                                <li><span>2020</span><br>Completed SCC from Kishore Surywanshi International School Nashik</li>
+                                <li><span>2022</span><br>Completed my HSC from Pune University</li>
+                                <li><span>2022-2026</span><br>Persuing Computer Engineering from MESWCOE</li>
+                            </ul>
+                        </div>
+                </div>
+                   
+            </div>
+        </div>
+    </div>
+    <section id="projects">
+        <div class="projects-container">
+          <h2 class="section-title">My Projects</h2>
+          <div class="project-cards">
+            <div class="project-card">
+              <h3>Medical Management System</h3>
+              <p>The Medical Management System is a comprehensive software solution designed 
+                to automate and streamline the management of various tasks within a healthcare 
+                environment. This system simplifies the processes of managing patient information,
+                appointments, billing, and medical records, offering an efficient and user-friendly interface.
+                The system is built using HTML, CSS, and MySQL, ensuring a seamless and secure interaction for 
+                both healthcare professionals and patients.</p>
+              <a href="#" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+              <h3>Apptitude Test Website </h3>
+              <p>The Aptitude Test Website is an online platform designed to assess the cognitive abilities of 
+                users through a variety of practice aptitude tests. The platform offers a collection of tests that 
+                help individuals prepare for competitive exams, job interviews, and other assessments that require 
+                strong problem-solving, analytical, and logical thinking skills. This website serves as a convenient 
+                tool for users looking to evaluate and improve their aptitude skills in areas such as mathematics, reasoning, 
+                verbal ability, and data interpretation.</p>
+              <a href="#" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+              <h3>Movie Recommendation System using AI</h3>
+              <p>The Movie Recommendation System is an intelligent, AI-powered platform designed to provide personalized 
+                movie recommendations to users based on their preferences, viewing history, and other behavioral data. 
+                This system leverages Artificial Intelligence (AI) and Machine Learning (ML) algorithms to predict and recommend 
+                movies that users are likely to enjoy, thus enhancing their viewing experience.</p>
+              <a href="#" target="_blank">View Project</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="portfolio-section">
+        <div class="portfolio-container">
+          <h2 class="section-title">My Portfolio</h2>
+          <p class="portfolio-description">
+            Here's my portfolio where you can find more about my work, experience, and skills.
+          </p>
+          
+          <a href="personal-portfolio-img/images/my-cv.pdf" download class="download-btn">
+            📄 Download Portfolio (PDF)
+          </a>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="contact-container">
+          <h2 class="section-title">Contact Me</h2>
+          <p class="contact-description">
+            Feel free to reach out to me by filling the form below.
+          </p>
+      
+          <form class="contact-form" action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <input type="text" name="subject" placeholder="Subject" />
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+      
+      <nav class="navbar">
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+      
+      
+
+<script>
+    var links = document.getElementsByClassName("links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of links){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("activetab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("activetab");
+    }
+</script>
+
+
+</body>
+</html>
